@@ -13,12 +13,10 @@ import com.example.repository.MessageRepository;
 public class MessageService {
 
     private MessageRepository messageRepository;
-   // private AccountService accountService;
 
     @Autowired
     public MessageService(MessageRepository messageRepository){
         this.messageRepository = messageRepository;
-       // this.accountService = accountService;
     }
 
     public void addNewMessage(Message newMessage){
